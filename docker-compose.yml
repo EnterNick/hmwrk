@@ -20,6 +20,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    env_file:
+      - ./django-project/.env
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=postgres

@@ -1,0 +1,14 @@
+{% load static %}
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo" style="background: url({% static 'logo.png' %}) no-repeat center center /cover;">
+            </div>
+            <ul class="header__nav">
+                <li><a href="{% url 'index' %}"  class="header__link">home</a></li>
+                <li><a href="{% url 'recipe' %}"  class="header__link">market</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

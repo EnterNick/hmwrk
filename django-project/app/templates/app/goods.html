@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+  {% for recipe in data %}
+    <div class="recipes">
+      <div class="recipe">
+        <p class="recipe__title">{{recipe.title}}</p>
+        <p class="recipe__description">{{recipe.description}}</p>
+        <p class="recipe__ingredients">{{recipe.ingredients</p>
+        <p class="recipe__instructions">{{recipe.instructions}}</p>
+        <p class="recipe__category">{{recipe.category}}</p>
+        <p class="recipe__created_at">{{recipe.created_at}}</p>
+        <p class="recipe__created_by">{{recipe.created_by}}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
